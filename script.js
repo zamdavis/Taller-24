@@ -10,6 +10,7 @@ videoBox.onclick = function() {
   videoBox.setAttribute('class','hidden');
 };
 
-video.onclick = function() {
+video.onclick = function(event) {
+  event.stopPropagation();
   video.play();
 };
